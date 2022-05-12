@@ -101,3 +101,14 @@
         background-color: var(--gray-active);
     }
 }
+
+.more-btn {
+    font-size: 2rem;
+    padding: 4px 6px;
+    margin-left: 20px;
+    background: transparent;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
