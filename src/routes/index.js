@@ -12,6 +12,7 @@ const publicRoutes = [
     { path: '/following', component: Following },
     { path: '/profile', component: Profile },
     { path: '/upload', component: Upload, layout: HeaderOnly },
+    { path: '/@:username', component: Profile },
 ];
 
 //Private routes
