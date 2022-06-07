@@ -128,7 +128,7 @@ function Header() {
                         {currentUser ? (
                             <Image
                                 className={cx('user-avatar')}
-                                src="https://ap16-sign-sg.tiktokcdn.com/aweme/100x100/tiktok-obj/1632394954949633.jpeg?x-expires=1653746400&x-signature=m%2BaHAa33Jj4DT0CbOByZQGHH29I%3D"
+                                src="https://cdn.pixabay.com/photo/2022/02/20/13/56/red-throated-barbet-7024605__340.jpg"
                                 alt="Nguyen Van A"
                                 fallBack="https://graph.facebook.com/1815447818628828/picture?width=400&height=400"
                             />
