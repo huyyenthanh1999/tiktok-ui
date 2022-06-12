@@ -21,6 +21,10 @@
     align-items: center;
 }
 
+.logo-link {
+    display: flex;
+}
+
 //actions
 .actions {
     display: flex;
@@ -45,6 +49,7 @@
             right: 10px;
             color: var(--white-color);
             border-radius: 20px;
+            font-family: var(--font-family);
         }
     }
 

@@ -10,6 +10,7 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import Tippy from '@tippyjs/react';
 import 'tippy.js/dist/tippy.css';
+import { Link } from 'react-router-dom';
 
 import Button from '~/components/Button';
 import styles from './Header.module.scss';
@@ -19,6 +20,7 @@ import { faCircleQuestion, faKeyboard, faUser } from '@fortawesome/free-regular-
 import { UploadIcon, MessageIcon, InboxIcon } from '~/components/Icons';
 import Image from '~/components/image';
 import Search from '../Search';
+import routeConfig from '~/config/routes';
 
 const cx = classNames.bind(styles);
 const MENU_ITEMS = [
@@ -93,7 +95,9 @@ function Header() {
         <header className={cx('wrapper')}>
             <div className={cx('inner')}>
                 <div className={cx('logo')}>
-                    <img src={images.logo} alt="tiktok-logo" />
+                    <Link to={routeConfig.home} className={cx('logo-link')}>
+                        <img src={images.logo} alt="tiktok-logo" />
+                    </Link>
                 </div>
 
                 <Search />
