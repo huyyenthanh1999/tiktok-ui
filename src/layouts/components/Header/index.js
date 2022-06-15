@@ -20,7 +20,7 @@ import { faCircleQuestion, faKeyboard, faUser } from '@fortawesome/free-regular-
 import { UploadIcon, MessageIcon, InboxIcon } from '~/components/Icons';
 import Image from '~/components/image';
 import Search from '../Search';
-import routeConfig from '~/config/routes';
+import config from '~/config';
 
 const cx = classNames.bind(styles);
 const MENU_ITEMS = [
@@ -95,11 +95,10 @@ function Header() {
         <header className={cx('wrapper')}>
             <div className={cx('inner')}>
                 <div className={cx('logo')}>
-                    <Link to={routeConfig.home} className={cx('logo-link')}>
+                    <Link to={config.routes.home} className={cx('logo-link')}>
                         <img src={images.logo} alt="tiktok-logo" />
                     </Link>
                 </div>
-
                 <Search />
 
                 <div className={cx('actions')}>
